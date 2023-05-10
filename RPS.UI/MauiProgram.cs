@@ -40,6 +40,7 @@ namespace RPS.UI
             builder.Services.AddSingleton<PtInMemoryContext>();
             builder.Services.AddSingleton(typeof(IPtItemsRepository), typeof(PtItemsRepository));
             builder.Services.AddSingleton(typeof(IPtTasksRepository), typeof(PtTasksRepository));
+            builder.Services.AddSingleton(typeof(IPtDashboardRepository), typeof(PtDashboardRepository));
             return builder;
         }
 

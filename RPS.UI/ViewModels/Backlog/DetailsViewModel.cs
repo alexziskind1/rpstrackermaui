@@ -1,13 +1,10 @@
-﻿
-
-using Android.Content;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using RPS.BL;
 using RPS.Core.Models;
 using RPS.Core.Models.Dto;
 using RPS.UI.Events;
 using System.Collections.ObjectModel;
-using static Android.Content.ClipData;
+
 
 namespace RPS.UI.ViewModels.Backlog
 {

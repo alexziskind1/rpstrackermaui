@@ -1,24 +1,25 @@
-﻿using RPS.UI.ViewModels.Backlog;
-using RPS.UI.Views;
+﻿using RPS.UI.Views;
 using RPS.UI.Views.Backlog;
-using static Android.Content.ClipData;
+using RPS.UI.Views.Dashboard;
 
 namespace RPS.UI
 {
     public partial class App : Application
     {
-        public App(BacklogPage page)
+        public App()
         {
             InitializeComponent();
 
             Application.Current.UserAppTheme = AppTheme.Light;
-            //MainPage = new RPSFlyoutPage();
+            MainPage = new RPSFlyoutPage();
 
-            // dev code
+            // dev-time code use this to bypass having to navigate to individual pages via UI
+            // make sure to inject the needed page into App() - either DashboardPage or BacklogPage
+
             //var vm = Handler.MauiContext.Services.GetService(typeof(BacklogViewModel));
             //var newPage = (Page)Activator.CreateInstance(typeof(BacklogPage), vm);
 
-            MainPage = new NavigationPage( page);
+            //MainPage = new NavigationPage(page);
         }
     }
 }
