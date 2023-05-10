@@ -1,18 +1,16 @@
 ﻿using RPS.Core.Models;
 using RPS.Core.Models.Dto;
-using System.Collections.Generic;
 
-namespace RPS.BL
+namespace RPS.UI.BL;
+
+public interface IPtItemsRepository
 {
-    public interface IPtItemsRepository
-    {
-        IEnumerable<PtItem> GetAll();
-        IEnumerable<PtItem> GetUserItems(int userId);
-        IEnumerable<PtItem> GetOpenItems();
-        IEnumerable<PtItem> GetClosedItems();
-        PtItem GetItemById(int itemId);
+    IEnumerable<PtItem> GetAll();
+    IEnumerable<PtItem> GetUserItems(int userId);
+    IEnumerable<PtItem> GetOpenItems();
+    IEnumerable<PtItem> GetClosedItems();
+    PtItem GetItemById(int itemId);
 
-        PtItem AddNewItem(PtNewItem newItem);
-        PtItem UpdateItem(PtUpdateItem updateItem);
-    }
+    PtItem AddNewItem(PtNewItem newItem);
+    PtItem UpdateItem(PtUpdateItem updateItem);
 }

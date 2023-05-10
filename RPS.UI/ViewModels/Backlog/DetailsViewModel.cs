@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using RPS.BL;
 using RPS.Core.Models;
 using RPS.Core.Models.Dto;
 using RPS.UI.Events;
 using System.Collections.ObjectModel;
+using RPS.UI.BL;
 
 
 namespace RPS.UI.ViewModels.Backlog

@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using RPS.BL;
 using RPS.Core.Models.Dto;
 using RPS.UI.Models;
 using System.Collections.ObjectModel;
+using RPS.UI.BL;
 
 namespace RPS.UI.ViewModels.Dashboard
 {

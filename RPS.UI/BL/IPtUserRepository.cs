@@ -1,10 +1,8 @@
 ﻿using RPS.Core.Models;
-using System.Collections.Generic;
 
-namespace RPS.BL
+namespace RPS.UI.BL;
+
+public interface IPtUserRepository
 {
-    public interface IPtUserRepository
-    {
-        IEnumerable<PtUser> GetAll();
-    }
+    IEnumerable<PtUser> GetAll();
 }
