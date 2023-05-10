@@ -1,63 +1,60 @@
-﻿
-
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using RPS.Core.Models.Dto;
 using RPS.Core.Models.Enums;
 using System.Collections.ObjectModel;
 
-namespace RPS.UI.ViewModels.Backlog
+namespace RPS.UI.ViewModels.Backlog;
+
+public partial class AddItemViewModel : ObservableObject
 {
-    public partial class AddItemViewModel : ObservableObject
+    public string Title { get; set; }
+    public string Description { get; set; }
+
+    public string SelectedItemType { get; set; }
+
+    public ItemTypeEnum SelectedItemTypeEnum
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-
-        public string SelectedItemType { get; set; }
-
-        public ItemTypeEnum SelectedItemTypeEnum
+        get
         {
-            get
+            if (SelectedItemType != null)
             {
-                if (SelectedItemType != null)
-                {
-                    return Enum.Parse<ItemTypeEnum>(SelectedItemType);
-                }
-                else
-                {
-                    return ItemTypeEnum.PBI;
-                }
+                return Enum.Parse<ItemTypeEnum>(SelectedItemType);
+            }
+            else
+            {
+                return ItemTypeEnum.PBI;
             }
         }
+    }
 
-        private ObservableCollection<string> iTypes;
+    private ObservableCollection<string> iTypes;
 
-        public ObservableCollection<string> ItemTypes
+    public ObservableCollection<string> ItemTypes
+    {
+        get
         {
-            get
+            if (iTypes == null)
             {
-                if (iTypes == null)
-                {
-                    var itemTypeEnumArray = Enum.GetValues<ItemTypeEnum>();
-                    iTypes = new ObservableCollection<string>(itemTypeEnumArray.Select(e => e.ToString()));
-                }
+                var itemTypeEnumArray = Enum.GetValues<ItemTypeEnum>();
+                iTypes = new ObservableCollection<string>(itemTypeEnumArray.Select(e => e.ToString()));
+            }
 
-                return iTypes;
-            }
-            set
-            {
-                iTypes = value;
-            }
+            return iTypes;
         }
-
-        public PtNewItem GetNewItem()
+        set
         {
-            var newItem = new PtNewItem();
-
-            newItem.Title = Title;
-            newItem.Description = Description;
-            newItem.TypeStr = SelectedItemTypeEnum;
-
-            return newItem;
+            iTypes = value;
         }
+    }
+
+    public PtNewItem GetNewItem()
+    {
+        var newItem = new PtNewItem();
+
+        newItem.Title = Title;
+        newItem.Description = Description;
+        newItem.TypeStr = SelectedItemTypeEnum;
+
+        return newItem;
     }
 }

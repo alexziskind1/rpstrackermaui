@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using RPS.UI.BL;
 using RPS.UI.ViewModels.Dashboard;
 using RPS.UI.ViewModels.Backlog;
 using RPS.UI.Views.Dashboard;
 using RPS.UI.Views.Backlog;
-using RPS.BL;
 
 namespace RPS.UI
 {

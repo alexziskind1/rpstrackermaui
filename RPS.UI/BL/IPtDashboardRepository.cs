@@ -1,10 +1,9 @@
 ﻿using RPS.Core.Models.Dto;
 
-namespace RPS.BL
+namespace RPS.UI.BL;
+
+public interface IPtDashboardRepository
 {
-    public interface IPtDashboardRepository
-    {
-        PtDashboardStatusCounts GetStatusCounts(PtDashboardFilter filter);
-        PtDashboardFilteredIssues GetFilteredIssues(PtDashboardFilter filter);
-    }
+    PtDashboardStatusCounts GetStatusCounts(PtDashboardFilter filter);
+    PtDashboardFilteredIssues GetFilteredIssues(PtDashboardFilter filter);
 }

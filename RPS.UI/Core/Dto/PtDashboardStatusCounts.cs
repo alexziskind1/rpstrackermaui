@@ -1,8 +1,7 @@
-﻿namespace RPS.Core.Models.Dto
+﻿namespace RPS.Core.Models.Dto;
+
+public class PtDashboardStatusCounts
 {
-    public class PtDashboardStatusCounts
-    {
-        public int ClosedItemsCount { get; set; }
-        public int OpenItemsCount { get; set; }
-    }
+    public int ClosedItemsCount { get; set; }
+    public int OpenItemsCount { get; set; }
 }

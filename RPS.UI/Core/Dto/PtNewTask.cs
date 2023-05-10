@@ -1,8 +1,7 @@
-﻿namespace RPS.Core.Models.Dto
+﻿namespace RPS.Core.Models.Dto;
+
+public class PtNewTask
 {
-    public class PtNewTask
-    {
-        public string Title { get; set; }
-        public int ItemId { get; set; }
-    }
+    public string Title { get; set; }
+    public int ItemId { get; set; }
 }
