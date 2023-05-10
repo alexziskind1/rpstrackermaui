@@ -1,10 +1,9 @@
-﻿namespace RPS.Core.Models.Enums
+﻿namespace RPS.Core.Models.Enums;
+
+public enum StatusEnum
 {
-    public enum StatusEnum
-    {
-        Submitted = 2,
-        Open = 4,
-        Closed = 8,
-        ReOpened = 16
-    }
+    Submitted = 2,
+    Open = 4,
+    Closed = 8,
+    ReOpened = 16
 }

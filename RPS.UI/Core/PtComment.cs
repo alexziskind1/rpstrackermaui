@@ -1,7 +1,6 @@
-﻿namespace RPS.Core.Models
+﻿namespace RPS.Core.Models;
+
+public class PtComment : PtObjectBase
 {
-    public class PtComment : PtObjectBase
-    {
-        public PtUser User { get; set; }
-    }
+    public PtUser User { get; set; }
 }

@@ -1,10 +1,9 @@
-﻿namespace RPS.Core.Models.Enums
+﻿namespace RPS.Core.Models.Enums;
+
+public enum ItemTypeEnum
 {
-    public enum ItemTypeEnum
-    {
-        PBI,
-        Bug,
-        Chore,
-        Impediment
-    }
+    PBI,
+    Bug,
+    Chore,
+    Impediment
 }
