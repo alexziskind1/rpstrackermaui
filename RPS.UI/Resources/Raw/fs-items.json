@@ -272,7 +272,7 @@
       }
     ],
     "title": "User-centric Envisioneer Paradigms",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -530,7 +530,7 @@
     "estimate": 2,
     "id": 4,
     "priority": "Critical",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -683,7 +683,7 @@
       }
     ],
     "title": "Real-time Aggregate Eyeballs",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -1116,7 +1116,7 @@
     "estimate": 17,
     "id": 8,
     "priority": "Medium",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -2027,7 +2027,7 @@
     "estimate": 11,
     "id": 14,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -2237,7 +2237,7 @@
     "estimate": 15,
     "id": 15,
     "priority": "Medium",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -2522,7 +2522,7 @@
       }
     ],
     "title": "Frictionless Empower Metrics",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -2957,7 +2957,7 @@
       }
     ],
     "title": "Vertical Evolve Schemas",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -2988,7 +2988,7 @@
     "estimate": 10,
     "id": 20,
     "priority": "Medium",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -3505,7 +3505,7 @@
       }
     ],
     "title": "Cross-media Enhance E-commerce",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -3612,7 +3612,7 @@
       }
     ],
     "title": "Cutting-edge Whiteboard Relationships",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -3629,7 +3629,7 @@
     "estimate": 15,
     "id": 25,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -3779,7 +3779,7 @@
       }
     ],
     "title": "Innovative Iterate Convergence",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -4083,7 +4083,7 @@
     "estimate": 18,
     "id": 28,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -4200,7 +4200,7 @@
     "estimate": 14,
     "id": 29,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -4857,7 +4857,7 @@
       }
     ],
     "title": "Dynamic Engage Networks",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -5407,7 +5407,7 @@
       }
     ],
     "title": "Extensible Reintermediate Communities",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -5424,7 +5424,7 @@
     "estimate": 7,
     "id": 37,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -5898,7 +5898,7 @@
     "estimate": 5,
     "id": 40,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -6206,7 +6206,7 @@
     "estimate": 20,
     "id": 42,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -6703,7 +6703,7 @@
     "estimate": 19,
     "id": 45,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -7063,7 +7063,7 @@
     "estimate": 14,
     "id": 47,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -7414,7 +7414,7 @@
     "estimate": 14,
     "id": 50,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -7484,7 +7484,7 @@
       }
     ],
     "title": "Wireless Repurpose Interfaces",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -7515,7 +7515,7 @@
     "estimate": 22,
     "id": 51,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -7670,7 +7670,7 @@
     "estimate": 23,
     "id": 52,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -7856,7 +7856,7 @@
     "estimate": 10,
     "id": 53,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -8324,7 +8324,7 @@
       }
     ],
     "title": "End-to-end Enhance Convergence",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -8341,7 +8341,7 @@
     "estimate": 5,
     "id": 56,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -8600,7 +8600,7 @@
       }
     ],
     "title": "B2c E-enable Functionalities",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -9112,7 +9112,7 @@
       }
     ],
     "title": "Bricks-and-clicks Target E-business",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -9302,7 +9302,7 @@
       }
     ],
     "title": "Sticky Synergize Deliverables",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -9571,7 +9571,7 @@
       }
     ],
     "title": "Out-of-the-box Envisioneer Experiences",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -9654,7 +9654,7 @@
     "estimate": 6,
     "id": 64,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -9894,7 +9894,7 @@
     "estimate": 22,
     "id": 65,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -10556,7 +10556,7 @@
     "estimate": 20,
     "id": 69,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -10709,7 +10709,7 @@
       }
     ],
     "title": "Bleeding-edge Redefine Eyeballs",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -10753,7 +10753,7 @@
     "estimate": 7,
     "id": 70,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -11137,7 +11137,7 @@
     "estimate": 15,
     "id": 72,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -11999,7 +11999,7 @@
       }
     ],
     "title": "Magnetic Revolutionize Initiatives",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -12418,7 +12418,7 @@
     "estimate": 12,
     "id": 80,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -12545,7 +12545,7 @@
       }
     ],
     "title": "Viral Incentivize Action-items",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -12854,7 +12854,7 @@
       }
     ],
     "title": "Viral Leverage Content",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -13127,7 +13127,7 @@
     "estimate": 9,
     "id": 84,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -13269,7 +13269,7 @@
     "estimate": 21,
     "id": 85,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -13399,7 +13399,7 @@
       }
     ],
     "title": "Efficient Innovate Systems",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -13824,7 +13824,7 @@
     "estimate": 10,
     "id": 88,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -13942,7 +13942,7 @@
       }
     ],
     "title": "E-business Optimize E-services",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -14135,7 +14135,7 @@
     "estimate": 24,
     "id": 90,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -14590,7 +14590,7 @@
     "estimate": 5,
     "id": 92,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -14816,7 +14816,7 @@
     "estimate": 2,
     "id": 93,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -14978,7 +14978,7 @@
     "estimate": 8,
     "id": 94,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -15144,7 +15144,7 @@
       }
     ],
     "title": "E-business Recontextualize Users",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -15188,7 +15188,7 @@
     "estimate": 5,
     "id": 95,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -15364,7 +15364,7 @@
     "estimate": 21,
     "id": 96,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -15535,7 +15535,7 @@
     "estimate": 20,
     "id": 97,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -15920,7 +15920,7 @@
       }
     ],
     "title": "Rich Enable E-tailers",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -16091,7 +16091,7 @@
     "estimate": 7,
     "id": 101,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -16242,7 +16242,7 @@
       }
     ],
     "title": "Bricks-and-clicks Empower Users",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -16446,7 +16446,7 @@
     "estimate": 24,
     "id": 103,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -16508,7 +16508,7 @@
     "estimate": 5,
     "id": 104,
     "priority": "Critical",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -16728,7 +16728,7 @@
     "estimate": 9,
     "id": 105,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -17071,7 +17071,7 @@
     "estimate": 20,
     "id": 107,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -17283,7 +17283,7 @@
     "estimate": 21,
     "id": 109,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -17574,7 +17574,7 @@
       }
     ],
     "title": "Open-source Exploit Convergence",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -17644,7 +17644,7 @@
     "estimate": 3,
     "id": 111,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -17911,7 +17911,7 @@
     "estimate": 24,
     "id": 113,
     "priority": "Critical",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -18049,7 +18049,7 @@
     "estimate": 5,
     "id": 114,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -18443,7 +18443,7 @@
     "estimate": 16,
     "id": 116,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -18529,7 +18529,7 @@
       }
     ],
     "title": "Collaborative Streamline Niches",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -18612,7 +18612,7 @@
     "estimate": 11,
     "id": 117,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -18868,7 +18868,7 @@
     "estimate": 5,
     "id": 119,
     "priority": "Medium",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -19063,7 +19063,7 @@
     "estimate": 4,
     "id": 120,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -19229,7 +19229,7 @@
       }
     ],
     "title": "Dynamic Deliver Models",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -19820,7 +19820,7 @@
     "estimate": 11,
     "id": 124,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -19991,7 +19991,7 @@
     "estimate": 1,
     "id": 125,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -20048,7 +20048,7 @@
       }
     ],
     "title": "Out-of-the-box Reintermediate Eyeballs",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -20105,7 +20105,7 @@
     "estimate": 17,
     "id": 126,
     "priority": "Medium",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -20410,7 +20410,7 @@
     "estimate": 3,
     "id": 128,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -20582,7 +20582,7 @@
       }
     ],
     "title": "Interactive Scale Methodologies",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -20749,7 +20749,7 @@
       }
     ],
     "title": "Out-of-the-box Monetize Niches",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -20941,7 +20941,7 @@
     "estimate": 14,
     "id": 131,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -21339,7 +21339,7 @@
     "estimate": 3,
     "id": 134,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -21544,7 +21544,7 @@
     "estimate": 4,
     "id": 135,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -21696,7 +21696,7 @@
     "estimate": 23,
     "id": 136,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -21903,7 +21903,7 @@
       }
     ],
     "title": "Open-source Morph Channels",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -21973,7 +21973,7 @@
     "estimate": 15,
     "id": 138,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -22055,7 +22055,7 @@
     "estimate": 20,
     "id": 139,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -22410,7 +22410,7 @@
     "estimate": 1,
     "id": 141,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -22562,7 +22562,7 @@
     "estimate": 16,
     "id": 142,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -22666,7 +22666,7 @@
       }
     ],
     "title": "Back-end Envisioneer E-markets",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -22996,7 +22996,7 @@
       }
     ],
     "title": "Revolutionary Syndicate E-markets",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -23066,7 +23066,7 @@
     "estimate": 14,
     "id": 145,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -23174,7 +23174,7 @@
       }
     ],
     "title": "B2c Architect Systems",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -23355,7 +23355,7 @@
       }
     ],
     "title": "Transparent Synergize Portals",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -23438,7 +23438,7 @@
     "estimate": 4,
     "id": 147,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -23601,7 +23601,7 @@
     "estimate": 12,
     "id": 148,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -23721,7 +23721,7 @@
     "estimate": 4,
     "id": 149,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -23937,7 +23937,7 @@
     "estimate": 17,
     "id": 151,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -24094,7 +24094,7 @@
       }
     ],
     "title": "E-business Aggregate Niches",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -24374,7 +24374,7 @@
     "estimate": 20,
     "id": 153,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -24822,7 +24822,7 @@
     "estimate": 19,
     "id": 156,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -24955,7 +24955,7 @@
     "estimate": 17,
     "id": 157,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -25235,7 +25235,7 @@
     "estimate": 6,
     "id": 159,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -25364,7 +25364,7 @@
       }
     ],
     "title": "Leading-edge Embrace Architectures",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -25758,7 +25758,7 @@
     "estimate": 6,
     "id": 162,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -26112,7 +26112,7 @@
     "estimate": 16,
     "id": 164,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -26192,7 +26192,7 @@
     "estimate": 14,
     "id": 165,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -26237,7 +26237,7 @@
       }
     ],
     "title": "B2b Scale Portals",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -26486,7 +26486,7 @@
       }
     ],
     "title": "Clicks-and-mortar Grow Architectures",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -26639,7 +26639,7 @@
       }
     ],
     "title": "Integrated Transition Partnerships",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -26955,7 +26955,7 @@
     "estimate": 8,
     "id": 171,
     "priority": "Critical",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -27143,7 +27143,7 @@
     "estimate": 16,
     "id": 172,
     "priority": "Low",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -27287,7 +27287,7 @@
       }
     ],
     "title": "Granular Syndicate Communities",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -27861,7 +27861,7 @@
       }
     ],
     "title": "Viral Reintermediate Mindshare",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -28101,7 +28101,7 @@
     "estimate": 7,
     "id": 178,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -28203,7 +28203,7 @@
       }
     ],
     "title": "Enterprise Orchestrate Web Services",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -28608,7 +28608,7 @@
     "estimate": 10,
     "id": 182,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -28671,7 +28671,7 @@
       }
     ],
     "title": "Rich Deliver Channels",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -28893,7 +28893,7 @@
     "estimate": 24,
     "id": 184,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -29366,7 +29366,7 @@
     "estimate": 9,
     "id": 186,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": false,
@@ -29455,7 +29455,7 @@
     "estimate": 9,
     "id": 187,
     "priority": "High",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -29523,7 +29523,7 @@
       }
     ],
     "title": "Killer Disintermediate Platforms",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -29593,7 +29593,7 @@
     "estimate": 20,
     "id": 188,
     "priority": "Critical",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -29721,7 +29721,7 @@
     "estimate": 17,
     "id": 189,
     "priority": "Low",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -29875,7 +29875,7 @@
     "estimate": 17,
     "id": 190,
     "priority": "Critical",
-    "status": "ReOpened",
+    "status": "Stale",
     "tasks": [
       {
         "completed": true,
@@ -30170,7 +30170,7 @@
     "estimate": 5,
     "id": 193,
     "priority": "Critical",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -30323,7 +30323,7 @@
     "estimate": 3,
     "id": 194,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -30541,7 +30541,7 @@
     "estimate": 2,
     "id": 195,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -30600,7 +30600,7 @@
       }
     ],
     "title": "Back-end Maximize Eyeballs",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {
@@ -30799,7 +30799,7 @@
     "estimate": 9,
     "id": 197,
     "priority": "Medium",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": true,
@@ -30954,7 +30954,7 @@
     "estimate": 17,
     "id": 198,
     "priority": "High",
-    "status": "Submitted",
+    "status": "New",
     "tasks": [
       {
         "completed": false,
@@ -31051,7 +31051,7 @@
       }
     ],
     "title": "User-centric Drive Networks",
-    "type": "Impediment"
+    "type": "Block"
   },
   {
     "assignee": {

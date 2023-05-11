@@ -5,5 +5,5 @@ public enum ItemTypeEnum
     PBI,
     Bug,
     Chore,
-    Impediment
+    Block
 }
