@@ -5,6 +5,7 @@ using RPS.UI.ViewModels.Dashboard;
 using RPS.UI.ViewModels.Backlog;
 using RPS.UI.Views.Dashboard;
 using RPS.UI.Views.Backlog;
+using Telerik.Maui.Controls.Compatibility;
 
 namespace RPS.UI
 {
@@ -20,6 +21,7 @@ namespace RPS.UI
 
             builder
                 .UseMauiApp<App>()
+                .UseTelerik()
                 .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {

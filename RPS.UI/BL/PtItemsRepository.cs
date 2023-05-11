@@ -35,7 +35,7 @@ public class PtItemsRepository : IPtItemsRepository
     public IEnumerable<PtItem> GetOpenItems()
     {
         return context.PtItems.Where(i => (i.Status == StatusEnum.Open ||
-                                           i.Status == StatusEnum.ReOpened) &&
+                                           i.Status == StatusEnum.Stale) &&
                                           i.DateDeleted == null);
     }
 

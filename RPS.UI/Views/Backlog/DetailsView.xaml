@@ -1,43 +1,76 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             xmlns:vm="clr-namespace:RPS.UI.ViewModels.Backlog"
              x:Class="RPS.UI.Views.Backlog.DetailsView">
+    <ContentView.Resources>
+        <telerik:DataFormVerticalStackLayout x:Key="stackLayout" />
+        <telerik:DataFormGridLayout x:Key="gridLayout" />
+    </ContentView.Resources>
+
+
+    
+
 
     <ScrollView VerticalOptions="FillAndExpand">
-    <StackLayout Spacing="5">
+        <Grid RowDefinitions="*,*">
 
-        <Label Text="Title"/>
-        <Entry Placeholder="Item Title" Text="{Binding Title}" />
+            <Grid Margin="16" Grid.Row="0"
+                RowDefinitions="*, Auto"
+                RowSpacing="16">
+                <telerik:RadDataForm x:Name="itemForm" BindingContext="{Binding ItemFormVm}"
+                                CommitMode="PropertyChanged"
+                                HeaderPosition="{OnIdiom Default=Above, Phone=Beside}"
+                                LayoutDefinition="{OnIdiom Default={StaticResource gridLayout},
+                                                        Phone={StaticResource stackLayout}}">
+
+                    <telerik:DataFormMultiLineEditor PropertyName="Description"/>
+                    <telerik:DataFormRadComboBoxEditor PropertyName="ItemType" />
+                    <telerik:DataFormRadSegmentedEditor PropertyName="Status"/>
+                    <telerik:DataFormRadSegmentedEditor PropertyName="Reservation" />
+                </telerik:RadDataForm>
+                
+                <telerik:RadButton Grid.Row="1"
+                            Text="Reserve"
+                            Style="{StaticResource SubmitButtonStyle}"
+                            HorizontalOptions="{OnIdiom Default=Start, Phone=Fill}"
+                            Command="{Binding CommitCommand, Source={x:Reference dataForm}}" />
+            </Grid>
+
+            <StackLayout Grid.Row="1" BindingContext="{Binding ItemFormVm}">
+                <Label Text="Title"/>
+                <Entry Placeholder="Item Title" Text="{Binding Title}" />
         
-        <Label Text="Description"/>
-        <Editor Placeholder="Item Description" Text="{Binding Description}"/>
+                <Label Text="Description"/>
+                <Editor Placeholder="Item Description" Text="{Binding Description}"/>
         
-        <Label Text="Item Type"/>
-        <Picker Title="Select Item Type"
-                ItemsSource="{Binding ItemTypes}"
-                SelectedItem="{Binding SelectedItemType}"
-			    >
-        </Picker>
+                <Label Text="Item Type"/>
+                <Picker Title="Select Item Type"
+                        ItemsSource="{Binding ItemTypes}"
+                        SelectedItem="{Binding SelectedItemType}"
+			            >
+                </Picker>
 
-        <Label Text="Priority"/>
-        <Picker Title="Select Priority"
-                ItemsSource="{Binding Priorities}"
-                SelectedItem="{Binding SelectedPriority}"
-			    >
-        </Picker>
+                <Label Text="Priority"/>
+                <Picker Title="Select Priority"
+                        ItemsSource="{Binding Priorities}"
+                        SelectedItem="{Binding SelectedPriority}"
+			            >
+                </Picker>
 
-            <Label Text="Status"/>
-            <Picker Title="Select Status"
-                ItemsSource="{Binding Statuses}"
-                SelectedItem="{Binding SelectedStatus}"
-			    >
-            </Picker>
+                    <Label Text="Status"/>
+                    <Picker Title="Select Status"
+                        ItemsSource="{Binding Statuses}"
+                        SelectedItem="{Binding SelectedStatus}"
+			            >
+                    </Picker>
 
-            <Label Text="Estimate"/>
-        <Slider Minimum="0" Maximum="20" Value="{Binding Estimate}"/>
+                    <Label Text="Estimate"/>
+                <Slider Minimum="0" Maximum="20" Value="{Binding Estimate}"/>
+            </StackLayout>
 
-
-    </StackLayout>
+        </Grid>
     </ScrollView>
 
 </ContentView>
