@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using Microsoft.Maui.LifecycleEvents;
 using RPS.UI.BL;
 using RPS.UI.ViewModels.Dashboard;
 using RPS.UI.ViewModels.Backlog;
@@ -7,6 +8,7 @@ using RPS.UI.Views.Dashboard;
 using RPS.UI.Views.Backlog;
 using Telerik.Maui.Controls.Compatibility;
 
+[assembly:XamlCompilation(XamlCompilationOptions.Compile)]
 namespace RPS.UI
 {
     public static class MauiProgram
@@ -14,10 +16,6 @@ namespace RPS.UI
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-
-            builder.RegisterAppServices()
-                    .RegisterViewModels()
-                    .RegisterViews();
 
             builder
                 .UseMauiApp<App>()
@@ -28,6 +26,10 @@ namespace RPS.UI
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.RegisterAppServices()
+                    .RegisterViewModels()
+                    .RegisterViews();
 
 #if DEBUG
 		builder.Logging.AddDebug();
