@@ -1,4 +1,5 @@
-﻿namespace RPS.Core.Models.Enums;
+﻿
+namespace RPS.Core.Models.Enums;
 
 public enum PriorityEnum
 {

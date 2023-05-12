@@ -93,11 +93,11 @@ public partial class DetailsViewModel : ObservableObject
             Id = TheItem.Id,
             Title = DetailsScreenVm.ItemFormVm.Title,
             Description = DetailsScreenVm.ItemFormVm.Description,
-            Type = DetailsScreenVm.ItemFormVm.SelectedItemTypeEnum,
+            Type = DetailsScreenVm.ItemFormVm.ItemType,
             AssigneeId = TheItem.Assignee.Id,
             Estimate = Convert.ToInt32(DetailsScreenVm.ItemFormVm.Estimate),
-            Priority = DetailsScreenVm.ItemFormVm.SelectedPriorityEnum,    
-            Status = DetailsScreenVm.ItemFormVm.SelectedStatusEnum
+            Priority = DetailsScreenVm.ItemFormVm.Priority,    
+            Status = DetailsScreenVm.ItemFormVm.Status
         };
 
         var updatedItem = itemsRepo.UpdateItem(updateItem);
