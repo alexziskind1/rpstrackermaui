@@ -38,6 +38,9 @@
     <MauiXaml Update="Views\Backlog\DetailsView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Backlog\ItemsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Backlog\Popups\AddItemPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
