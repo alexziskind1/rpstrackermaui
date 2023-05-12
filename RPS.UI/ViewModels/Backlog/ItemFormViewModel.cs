@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using RPS.Core.Models.Enums;
 using RPS.Core.Models;
 using System.Runtime.CompilerServices;
@@ -11,13 +11,10 @@ public class ItemFormViewModel : ObservableObject
     public DetailsScreenViewModel parentVm;
     private string title;
     private string description;
-
     private ItemTypeEnum itemType;
     private PriorityEnum priority;
     private StatusEnum status;
-
     private int estimate;
-    
 
     public ItemFormViewModel(PtItem item, DetailsScreenViewModel parentVm)
     {
@@ -84,3 +81,4 @@ public class ItemFormViewModel : ObservableObject
     }
 
 }
+

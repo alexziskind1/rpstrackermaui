@@ -15,7 +15,6 @@
 
     <ScrollView VerticalOptions="FillAndExpand">
         <Grid RowDefinitions="*,*">
-
             <Grid Margin="16" Grid.Row="0"
                 RowDefinitions="*, Auto"
                 RowSpacing="16">
@@ -71,6 +70,7 @@
             </StackLayout>
 
         </Grid>
+
     </ScrollView>
 
 </ContentView>

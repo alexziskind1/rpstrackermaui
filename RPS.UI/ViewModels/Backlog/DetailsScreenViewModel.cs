@@ -1,5 +1,3 @@
-﻿
-
 using CommunityToolkit.Mvvm.ComponentModel;
 using RPS.Core.Models;
 using RPS.Core.Models.Dto;
@@ -17,5 +15,4 @@ public partial class DetailsScreenViewModel : ObservableObject
     {
         this.ItemFormVm = new ItemFormViewModel(item, this);
     }
-
 }
