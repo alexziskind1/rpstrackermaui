@@ -13,31 +13,27 @@ public partial class BacklogViewModel : ObservableObject
     public readonly IPtItemsRepository itemsRepo;
     public readonly IPtTasksRepository tasksRepo;
 
-
-    //public ObservableCollection<PtItem> MyItems { get; set; }
-
-    [ObservableProperty]
-    public ObservableCollection<PtItem> myItems;
+    public ItemsViewModel ItemsVm { get; private set; }
 
     public BacklogViewModel(IPtItemsRepository itemsRepo, IPtTasksRepository tasksRepo)
     {
         this.itemsRepo = itemsRepo;
         this.tasksRepo = tasksRepo;
-        MyItems = new ObservableCollection<PtItem>();
+
+        this.ItemsVm = new ItemsViewModel(this);
     }
 
-    public void RefreshItems()
+    public ObservableCollection<PtItem> GetRefreshedItems()
     {
         var refreshedItems = new ObservableCollection<PtItem>(itemsRepo.GetAll());
-        MyItems = refreshedItems;
-        //MyItems.Clear();
-        //MyItems.Concat(refreshedItems);
+        ItemsVm.RefreshItems(refreshedItems);
+        return refreshedItems;
     }
 
     public void SaveNewItem(PtNewItem newItem)
     {
         newItem.UserId = CURRENT_USER_ID;
         var savedItem = itemsRepo.AddNewItem(newItem);
-        MyItems.Insert(0, savedItem);
+        ItemsVm.InsertItem(0, savedItem);
     }
 }

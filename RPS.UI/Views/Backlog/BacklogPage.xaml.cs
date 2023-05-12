@@ -43,6 +43,6 @@ public partial class BacklogPage : ContentPage
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
         var vm = BindingContext as BacklogViewModel;
-        vm.RefreshItems();
+        vm.GetRefreshedItems();
     }
 }
