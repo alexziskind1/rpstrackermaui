@@ -13,7 +13,7 @@ public partial class BacklogPage : ContentPage
 		InitializeComponent();
 
 		BindingContext = vm;
-	}
+    }
 
     public async void AddItem_Clicked(object sender, EventArgs e)
     {

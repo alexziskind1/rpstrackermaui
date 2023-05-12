@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPS.UI.Views.Backlog.BacklogPage"
              xmlns:backlogViews="clr-namespace:RPS.UI.Views.Backlog"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="Backlog">
 
@@ -17,7 +18,8 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <backlogViews:ItemsView Grid.Row="1" BindingContext="{Binding ItemsVm}" />
+
+        <telerik:RadDataGrid x:Name="dataGrid"/>
     </Grid>
 
 </ContentPage>

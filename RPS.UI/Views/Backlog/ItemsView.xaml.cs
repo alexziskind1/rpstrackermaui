@@ -8,7 +8,17 @@ public partial class ItemsView : ContentView
 	public ItemsView()
 	{
 		InitializeComponent();
-	}
+
+        /*
+        this.dataGrid.ItemsSource = new List<Data>
+        {
+            new Data { Country = "India", Capital = "New Delhi"},
+            new Data { Country = "South Africa", Capital = "Cape Town"},
+            new Data { Country = "Nigeria", Capital = "Abuja" },
+            new Data { Country = "Singapore", Capital = "Singapore" }
+        };
+        */
+    }
 
     public void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
