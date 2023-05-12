@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RPS.UI.Views.Backlog.Popups.AddItemPopup"
-             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             xmlns:vm="clr-namespace:RPS.UI.ViewModels.Backlog"
-             >
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           x:Class="RPS.UI.Views.Backlog.Popups.AddItemPopup"
+           xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+           xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+           xmlns:vm="clr-namespace:RPS.UI.ViewModels.Backlog">
 
     <mct:Popup.BindingContext>
         <vm:AddItemViewModel/>
@@ -63,6 +63,10 @@
 
         <Button Text="Save"
                 Clicked="Save_Clicked" />
+
+        <telerik:RadButton
+                 Text="Save"  
+                 Clicked="Save_Clicked"/>
 
 
     </VerticalStackLayout>
