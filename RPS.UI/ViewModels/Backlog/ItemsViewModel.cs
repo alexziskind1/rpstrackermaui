@@ -1,19 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using RPS.Core.Models;
-using RPS.Core.Models.Dto;
 using System.Collections.ObjectModel;
-using RPS.UI.BL;
+
 
 namespace RPS.UI.ViewModels.Backlog
 {
-
-    public class Data
-    {
-        public string Country { get; set; }
-        public string Capital { get; set; }
-    }
-
-
     public partial class ItemsViewModel : ObservableObject
     {
         public BacklogViewModel ParentVm { get; set; }
@@ -21,30 +12,27 @@ namespace RPS.UI.ViewModels.Backlog
         [ObservableProperty]
         public ObservableCollection<PtItem> myItems;
 
-        [ObservableProperty]
-        public ObservableCollection<Data> myData;
-
 
         public ItemsViewModel(BacklogViewModel parentVm)
         {
             this.ParentVm = parentVm;
-            MyItems = new ObservableCollection<PtItem>();
-
-            MyData = new ObservableCollection<Data>()
+            MyItems = new ObservableCollection<PtItem>()
             {
-
-                new Data { Country = "India", Capital = "New Delhi"},
-                new Data { Country = "South Africa", Capital = "Cape Town"},
-                new Data { Country = "Nigeria", Capital = "Abuja" },
-                new Data { Country = "Singapore", Capital = "Singapore" }
-
-
+                new PtItem
+                {
+                    Id = 1,
+                    Title = "item 1"
+                }
             };
         }
 
         public void RefreshItems(ObservableCollection<PtItem> refreshedItems)
         {
-            MyItems = refreshedItems;
+            MyItems.Clear();
+            foreach (var item in refreshedItems)
+            {
+                MyItems.Add(item);
+            }
         }
 
         public void InsertItem(int location, PtItem item)

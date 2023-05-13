@@ -3,7 +3,6 @@ using RPS.Core.Models;
 using RPS.Core.Models.Dto;
 using RPS.UI.ViewModels.Backlog;
 using RPS.UI.Views.Backlog.Popups;
-using Telerik.Maui.Controls.Compatibility.DataGrid;
 
 namespace RPS.UI.Views.Backlog;
 
@@ -11,28 +10,8 @@ public partial class BacklogPage : ContentPage
 {
 	public BacklogPage(BacklogViewModel vm)
 	{
-        // TODO - Temporary workaround to wait until app is ready
-        this.Loaded += (s,e) => CreateDataGrid();
-
-		InitializeComponent();
-
+        InitializeComponent();
 		BindingContext = vm;
-    }
-
-    private void CreateDataGrid()
-    {
-        var dg = new RadDataGrid
-        {
-            AutoGenerateColumns = false,
-            ItemsSource = (BindingContext as BacklogViewModel).ItemsVm.MyItems
-        };
-        
-        dg.Columns.Add(new DataGridTextColumn { PropertyName = "Description", HeaderText = "Description" });
-        dg.Columns.Add(new DataGridTextColumn { PropertyName = "Estimate", HeaderText = "Estimate" });
-        // mOAR columnz!
-
-        Grid.SetRow(dg, 1);
-        RootGrid.Children.Add(dg);
     }
 
     public async void AddItem_Clicked(object sender, EventArgs e)

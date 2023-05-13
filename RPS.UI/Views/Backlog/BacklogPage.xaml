@@ -18,6 +18,9 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
+
+        <backlogViews:ItemsView Grid.Row="1" BindingContext="{Binding ItemsVm}"/>
+
         <!-- Throws **System.Reflection.TargetInvocationException:** 'Exception has been thrown by the target of an invocation.
         
         My initial diagnosis is this is attempting to create the native view before it is ready. If we wait until OnApprearing, everything is fine.

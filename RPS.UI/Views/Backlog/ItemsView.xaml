@@ -5,11 +5,9 @@
              x:Class="RPS.UI.Views.Backlog.ItemsView">
 
 
-    <VerticalStackLayout>
-
-
-
-
+    <Grid x:Name="RootLayout">
+        
+        <!-- starting table
         <CollectionView Grid.Row="1"
                     SelectionMode="Single"
                     ItemsSource="{Binding MyItems}"
@@ -23,5 +21,9 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </VerticalStackLayout>
+         -->
+
+
+
+    </Grid>
 </ContentView>

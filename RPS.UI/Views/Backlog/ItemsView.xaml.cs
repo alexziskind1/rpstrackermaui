@@ -1,23 +1,36 @@
 using RPS.Core.Models;
 using RPS.UI.ViewModels.Backlog;
+using Telerik.Maui.Controls.Compatibility.DataGrid;
 
 namespace RPS.UI.Views.Backlog;
 
 public partial class ItemsView : ContentView
 {
+
+    public RadDataGrid Dg { get; set; }
+
 	public ItemsView()
 	{
-		InitializeComponent();
+        // TODO - Temporary workaround to wait until app is ready
+        this.Loaded += (s, e) => CreateDataGrid();
+        InitializeComponent();
+    }
 
-        /*
-        this.dataGrid.ItemsSource = new List<Data>
+    private void CreateDataGrid()
+    {
+        var dg = new RadDataGrid
         {
-            new Data { Country = "India", Capital = "New Delhi"},
-            new Data { Country = "South Africa", Capital = "Cape Town"},
-            new Data { Country = "Nigeria", Capital = "Abuja" },
-            new Data { Country = "Singapore", Capital = "Singapore" }
+            AutoGenerateColumns = true,
+            ItemsSource = (BindingContext as ItemsViewModel).MyItems
         };
-        */
+        Dg = dg;
+
+        dg.Columns.Add(new DataGridTextColumn { PropertyName = "Description", HeaderText = "Description" });
+        dg.Columns.Add(new DataGridTextColumn { PropertyName = "Estimate", HeaderText = "Estimate" });
+        // mOAR columnz!
+
+        Grid.SetRow(dg, 1);
+        RootLayout.Children.Add(dg);
     }
 
     public void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -34,5 +47,9 @@ public partial class ItemsView : ContentView
         ((CollectionView)sender).SelectedItem = null;
     }
 
-
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        var vm = BindingContext as ItemsViewModel;
+        
+    }
 }
