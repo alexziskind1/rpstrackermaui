@@ -6,7 +6,7 @@ namespace RPS.UI;
 
 public partial class App : Application
 {
-    public App(BacklogPage page)
+    public App(DashboardPage page)
     {
         InitializeComponent();
 

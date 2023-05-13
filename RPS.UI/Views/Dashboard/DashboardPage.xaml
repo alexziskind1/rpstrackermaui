@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPS.UI.Views.Dashboard.DashboardPage"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             xmlns:dashViewModels="clr-namespace:RPS.UI.ViewModels.Dashboard"
+             xmlns:formatters="clr-namespace:RPS.UI.Formatters"
              Title="Dashboard">
-    <Grid RowDefinitions="100, 100, *" ColumnDefinitions="*,*">
+    <Grid RowDefinitions="100, 100, 300" ColumnDefinitions="*,*">
         <Picker x:Name="dateRange" Grid.Row="0" Grid.ColumnSpan="2"
                 ItemsSource="{Binding Ranges}"
                 ItemDisplayBinding="{Binding Name}"
@@ -23,8 +26,46 @@
                 <Label Text="Closed Issues"/>
                 <Label Text="{Binding IssueCountClosed}"/>
             </VerticalStackLayout>
-            
         </Border>
+
+        <telerik:RadCartesianChart 
+            Grid.Row="2" 
+            Grid.ColumnSpan="2"
+            x:Name="chart" 
+            BindingContext="{Binding ChartVm}">
+
+
+            <telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:DateTimeContinuousAxis LabelFitMode="Rotate"
+                                           MajorStepUnit="Day">
+                    <telerik:DateTimeContinuousAxis.LabelFormatter>
+                        <formatters:DateLabelFormatter />
+                    </telerik:DateTimeContinuousAxis.LabelFormatter>
+                </telerik:DateTimeContinuousAxis>
+                
+            </telerik:RadCartesianChart.HorizontalAxis>
+            
+            <telerik:RadCartesianChart.VerticalAxis>
+                <telerik:NumericalAxis
+                                  MajorStep="0.5"
+                                   />
+            </telerik:RadCartesianChart.VerticalAxis>
+            
+            <telerik:RadCartesianChart.Series>
+                <telerik:BarSeries ItemsSource="{Binding OpenItemsData}"
+                          CategoryBinding="Date"
+                          ValueBinding="Value" />
+
+                <telerik:BarSeries ItemsSource="{Binding ClosedItemsData}"
+                          CategoryBinding="Date"
+                          ValueBinding="Value" />
+                
+            </telerik:RadCartesianChart.Series>
+
+
+        </telerik:RadCartesianChart>
+
+   
 
     </Grid>
 </ContentPage>
