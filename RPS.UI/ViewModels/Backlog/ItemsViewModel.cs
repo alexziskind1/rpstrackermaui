@@ -16,14 +16,7 @@ namespace RPS.UI.ViewModels.Backlog
         public ItemsViewModel(BacklogViewModel parentVm)
         {
             this.ParentVm = parentVm;
-            MyItems = new ObservableCollection<PtItem>()
-            {
-                new PtItem
-                {
-                    Id = 1,
-                    Title = "item 1"
-                }
-            };
+            MyItems = new ObservableCollection<PtItem>();
         }
 
         public void RefreshItems(ObservableCollection<PtItem> refreshedItems)
