@@ -3,9 +3,8 @@ using RPS.UI.Converters;
 using RPS.UI.ViewModels.Backlog;
 using Telerik.Maui.Controls;
 using Telerik.Maui.Controls.Compatibility.DataGrid;
-
+using Telerik.Maui.Controls.Compatibility.Primitives;
 using Image = Microsoft.Maui.Controls.Image;
-
 namespace RPS.UI.Views.Backlog;
 
 public partial class ItemsView : ContentView
@@ -44,7 +43,29 @@ public partial class ItemsView : ContentView
         });
         dg.Columns.Add(colType);
 
+        /* Example of a simple text column
         dg.Columns.Add(new DataGridTextColumn { PropertyName = "Title", HeaderText = "Title" });
+        */
+
+        var colTitleWithPriority = new DataGridTemplateColumn { HeaderText = "Title" };
+        colTitleWithPriority.CellContentTemplate = new DataTemplate(() =>
+        {
+            var badge = new RadBadgeView { BadgeHorizontalPosition = BadgePosition.Start, BadgeText = "", BadgeBackgroundColor = Color.Parse("Green") };
+
+            var badgeColorBinding = new Binding("Priority");
+            badgeColorBinding.Converter = new PriorityColorConverter();
+            badge.SetBinding(RadBadgeView.BadgeBackgroundColorProperty, badgeColorBinding);
+
+            var titleLabel = new Label();
+            var titleTextBinding = new Binding("Title");
+            titleLabel.SetBinding(Label.TextProperty, titleTextBinding);
+
+            badge.Content = titleLabel;
+
+            return badge;
+        });
+        dg.Columns.Add(colTitleWithPriority);
+
 
 
         /* Example with Avatar only
@@ -84,6 +105,11 @@ public partial class ItemsView : ContentView
             return hsl;
         });
         dg.Columns.Add(colAssignee);
+
+
+
+
+
 
         var colEstimate = new DataGridNumericalColumn { PropertyName = "Estimate", HeaderText = "Estimate" };
         dg.Columns.Add(colEstimate);
