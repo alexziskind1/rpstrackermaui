@@ -16,12 +16,17 @@ public partial class ItemsView : ContentView
         var selItem = (e.CurrentSelection.FirstOrDefault() as PtItem);
         if (selItem != null)
         {
-            var vm = BindingContext as ItemsViewModel;
-            var vmDetails = new DetailsViewModel(selItem, vm.ParentVm.itemsRepo, vm.ParentVm.tasksRepo);
-            Navigation.PushAsync(new DetailsPage(vmDetails));
+            NavigateToDetails(selItem);
         }
 
         ((CollectionView)sender).SelectedItem = null;
+    }
+
+    private void NavigateToDetails(PtItem selItem)
+    {
+        var vm = BindingContext as ItemsViewModel;
+        var vmDetails = new DetailsViewModel(selItem as PtItem, vm.ParentVm.itemsRepo, vm.ParentVm.tasksRepo);
+        Navigation.PushAsync(new DetailsPage(vmDetails));
     }
 
 
