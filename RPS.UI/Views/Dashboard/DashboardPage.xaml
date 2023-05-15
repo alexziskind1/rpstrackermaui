@@ -34,10 +34,9 @@
             x:Name="chart" 
             BindingContext="{Binding ChartVm}">
 
-
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:DateTimeContinuousAxis LabelFitMode="Rotate"
-                                           MajorStepUnit="Day">
+                                           MajorStepUnit="Month">
                     <telerik:DateTimeContinuousAxis.LabelFormatter>
                         <formatters:DateLabelFormatter />
                     </telerik:DateTimeContinuousAxis.LabelFormatter>
@@ -46,9 +45,7 @@
             </telerik:RadCartesianChart.HorizontalAxis>
             
             <telerik:RadCartesianChart.VerticalAxis>
-                <telerik:NumericalAxis
-                                  MajorStep="0.5"
-                                   />
+                <telerik:NumericalAxis />
             </telerik:RadCartesianChart.VerticalAxis>
             
             <telerik:RadCartesianChart.Series>

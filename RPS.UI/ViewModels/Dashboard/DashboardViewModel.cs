@@ -88,8 +88,8 @@ public partial class DashboardViewModel : ObservableObject
         //Chart related
         var filteredIssues = repo.GetFilteredIssues(filter);
 
-        ChartVm.OpenItemsData = new ObservableCollection<TemporalData>();
-        ChartVm.ClosedItemsData = new ObservableCollection<TemporalData>();
+        ChartVm.OpenItemsData.Clear();
+        ChartVm.ClosedItemsData.Clear();
 
         for (int i = 0; i < filteredIssues.Categories.Count; i++) 
         {

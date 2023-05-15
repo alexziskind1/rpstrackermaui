@@ -14,6 +14,7 @@ namespace RPS.UI.ViewModels.Dashboard
     {
         public DateTime Date { get; set; }
         public double Value { get; set; }
+
     }
 
     public partial class ChartViewModel : ObservableObject
