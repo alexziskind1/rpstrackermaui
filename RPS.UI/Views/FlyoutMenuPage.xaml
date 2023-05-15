@@ -8,9 +8,9 @@
              xmlns:vmDashboard="clr-namespace:RPS.UI.ViewModels.Dashboard"
              xmlns:vmBacklog="clr-namespace:RPS.UI.ViewModels.Backlog"
              x:Class="RPS.UI.Views.FlyoutMenuPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="50">
 
-        <Label Text="RPS"></Label>
+        <Image Source="rpslogo.png" WidthRequest="150" Margin="50" />
 
         <CollectionView x:Name="collectionView"
                     x:FieldModifier="public"
