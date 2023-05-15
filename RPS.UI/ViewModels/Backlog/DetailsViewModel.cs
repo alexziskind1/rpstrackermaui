@@ -18,6 +18,7 @@ public partial class DetailsViewModel : ObservableObject
     [ObservableProperty]
     public string title;
 
+    /*
     [ObservableProperty]
     public object selection = "Details";
 
@@ -26,6 +27,7 @@ public partial class DetailsViewModel : ObservableObject
 
     [ObservableProperty]
     private bool tab2Visible;
+    
 
     partial void OnSelectionChanged(object value)
     {
@@ -41,6 +43,7 @@ public partial class DetailsViewModel : ObservableObject
             Tab2Visible = true;
         }
     }
+*/
 
     public DetailsScreenViewModel DetailsScreenVm { get; set; }
     public TasksScreenViewModel TasksScreenVm { get; set; }
@@ -52,8 +55,8 @@ public partial class DetailsViewModel : ObservableObject
 
         TheItem = item;
         title = item.Title;
-        Tab1Visible = selection.ToString().Equals("Details");
-        tab2Visible = selection.ToString().Equals("Tasks");
+        //Tab1Visible = selection.ToString().Equals("Details");
+        //tab2Visible = selection.ToString().Equals("Tasks");
 
         DetailsScreenVm = new DetailsScreenViewModel(item);
         TasksScreenVm = new TasksScreenViewModel(item);
