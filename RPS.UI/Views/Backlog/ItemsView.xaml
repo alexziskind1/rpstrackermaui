@@ -9,9 +9,10 @@
         <converters:AvatarConverter x:Key="AvatarConv" />
         <converters:FullNameConverter x:Key="FullNameConv" />
         <converters:ItemTypeImageConverter x:Key="ItemTypeImageConv" />
+        <converters:PriorityColorConverter x:Key="PriorityColorConv" />
 
         <DataTemplate x:Key="BadgeColumnCellTemplate">
-            <telerik:RadBadgeView BadgeBackgroundColor="{Binding Priority, FallbackValue=Green}"
+            <telerik:RadBadgeView BadgeBackgroundColor="{Binding Priority, FallbackValue=Green, Converter={StaticResource PriorityColorConv}}"
                                   BadgeText=""
                                   BadgeHorizontalPosition="Start">
                 <telerik:RadBadgeView.Content>
