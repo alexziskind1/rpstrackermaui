@@ -9,9 +9,6 @@ namespace RPS.UI.Views.Backlog;
 
 public partial class ItemsView : ContentView
 {
-
-    public RadDataGrid Dg { get; set; }
-
 	public ItemsView()
 	{
         // TODO - Temporary workaround to wait until app is ready
@@ -29,7 +26,7 @@ public partial class ItemsView : ContentView
             ItemsSource = (BindingContext as ItemsViewModel).MyItems,
 
         };
-        Dg = dg;
+
         dg.SelectionChanged += OnDataGridSelectionChanged;
         
         dg.Columns.Add(new DataGridTemplateColumn { CellContentTemplate = (DataTemplate)Resources["TypeCellTemplate"] });
