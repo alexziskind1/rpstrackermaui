@@ -18,25 +18,8 @@ public partial class ItemsView : ContentView
 
     private void CreateDataGrid()
     {
-        var dg = new RadDataGrid
-        {
-            AutoGenerateColumns = false,
-            SelectionMode = DataGridSelectionMode.Single,
-            SelectionUnit = DataGridSelectionUnit.Row,
-            ItemsSource = (BindingContext as ItemsViewModel).MyItems,
-
-        };
-
-        dg.SelectionChanged += OnDataGridSelectionChanged;
-        
-        dg.Columns.Add(new DataGridTemplateColumn { CellContentTemplate = (DataTemplate)Resources["TypeCellTemplate"] });
-        dg.Columns.Add(new DataGridTemplateColumn { HeaderText = "Title", CellContentTemplate = (DataTemplate)Resources["BadgeColumnCellTemplate"] });
-        dg.Columns.Add(new DataGridTemplateColumn { HeaderText = "Assignee", CellContentTemplate = (DataTemplate)Resources["AssigneeCellTemplate"] });
-        dg.Columns.Add(new DataGridNumericalColumn { PropertyName = "Estimate", HeaderText = "Estimate" });
-        dg.Columns.Add(new DataGridDateColumn { PropertyName = "DateCreated",  HeaderText = "Created" });
-        
-        Grid.SetRow(dg, 1);
-        RootLayout.Children.Add(dg);
+        var rDg = (RadDataGrid) Resources["ItemsDataGrid"];
+        RootLayout.Children.Add(rDg);
     }
 
     public void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
