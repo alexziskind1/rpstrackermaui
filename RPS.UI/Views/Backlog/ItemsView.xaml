@@ -2,8 +2,44 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             xmlns:converters="clr-namespace:RPS.UI.Converters"
              x:Class="RPS.UI.Views.Backlog.ItemsView">
 
+    <ContentView.Resources>
+        <converters:AvatarConverter x:Key="AvatarConv" />
+        <converters:FullNameConverter x:Key="FullNameConv" />
+        <converters:ItemTypeImageConverter x:Key="ItemTypeImageConv" />
+
+        <DataTemplate x:Key="BadgeColumnCellTemplate">
+            <telerik:RadBadgeView BadgeBackgroundColor="{Binding Priority, FallbackValue=Green}"
+                                  BadgeText=""
+                                  BadgeHorizontalPosition="Start">
+                <telerik:RadBadgeView.Content>
+                    <Label Text="{Binding Title}"/>
+                </telerik:RadBadgeView.Content>
+            </telerik:RadBadgeView>
+        </DataTemplate>
+
+        <DataTemplate x:Key="AssigneeCellTemplate">
+            <HorizontalStackLayout Spacing="15"
+                                   Margin="15">
+                <telerik:RadBorder BorderThickness="5"
+                                   CornerRadius="20">
+                    <Image Source="{Binding Assignee, Converter={StaticResource AvatarConv}}"
+                           WidthRequest="40" 
+                           HeightRequest="40"/>
+                </telerik:RadBorder>
+                <Label Text="{Binding Assignee, Converter={StaticResource FullNameConv}}"
+                       VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="TypeCellTemplate">
+            <Image Source="{Binding Type, Converter={StaticResource ItemTypeImageConv}}"
+                   WidthRequest="20"
+                   HeightRequest="20"/>
+        </DataTemplate>
+    </ContentView.Resources>
 
     <Grid x:Name="RootLayout">
         
@@ -25,7 +61,7 @@
 
         <!-- Throws **System.Reflection.TargetInvocationException:** 'Exception has been thrown by the target of an invocation.
         
-        My initial diagnosis is this is attempting to create the native view before it is ready. If we wait until OnApprearing, everything is fine.
+        My initial diagnosis is this is attempting to create the native view before it is ready. If we wait until OnAppearing, everything is fine.
         
         <telerik:RadDataGrid x:Name="dataGrid" AutoGenerateColumns="False" Grid.Row="1">
             <telerik:RadDataGrid.Columns>
