@@ -10,10 +10,27 @@
         <converters:FullNameConverter x:Key="FullNameConv" />
         <converters:ItemTypeImageConverter x:Key="ItemTypeImageConv" />
         <converters:PriorityColorConverter x:Key="PriorityColorConv" />
+    </ContentView.Resources>
+
+    <Grid x:Name="RootLayout">
+        <!-- starting table
+        <CollectionView Grid.Row="1"
+                    SelectionMode="Single"
+                    ItemsSource="{Binding MyItems}"
+                    SelectionChanged="OnCollectionViewSelectionChanged"
+                    >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <ContentView>
+                        <Label Padding="5" Text="{Binding Title}"/>
+                    </ContentView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+         -->
 
         <telerik:RadDataGrid 
             x:Key="ItemsDataGrid"
-            Grid.Row="1"
             ItemsSource="{Binding MyItems}"
             AutoGenerateColumns="False"
             SelectionMode="Single"
@@ -67,38 +84,6 @@
                 <telerik:DataGridDateColumn HeaderText="Created" PropertyName="DateCreated" />
             </telerik:RadDataGrid.Columns>
         </telerik:RadDataGrid>
-        
-        
-    </ContentView.Resources>
-
-    <Grid x:Name="RootLayout">
-        
-        <!-- starting table
-        <CollectionView Grid.Row="1"
-                    SelectionMode="Single"
-                    ItemsSource="{Binding MyItems}"
-                    SelectionChanged="OnCollectionViewSelectionChanged"
-                    >
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <ContentView>
-                        <Label Padding="5" Text="{Binding Title}"/>
-                    </ContentView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-         -->
-
-        <!-- Throws **System.Reflection.TargetInvocationException:** 'Exception has been thrown by the target of an invocation.
-        
-        My initial diagnosis is this is attempting to create the native view before it is ready. If we wait until OnAppearing, everything is fine.
-        
-        <telerik:RadDataGrid x:Name="dataGrid" AutoGenerateColumns="False" Grid.Row="1">
-            <telerik:RadDataGrid.Columns>
-                <telerik:DataGridTextColumn PropertyName="Description" HeaderText="Description"/>
-                <telerik:DataGridNumericalColumn PropertyName="Estimate" HeaderText="Estimate"/>
-            </telerik:RadDataGrid.Columns>
-        </telerik:RadDataGrid>-->
 
     </Grid>
 </ContentView>

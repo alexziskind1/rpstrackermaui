@@ -50,15 +50,15 @@ namespace RPS.UI
 
         public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder builder)
         {
-            builder.Services.AddTransient<DashboardViewModel>();
-            builder.Services.AddTransient<BacklogViewModel>();
+            builder.Services.AddScoped<DashboardViewModel>();
+            builder.Services.AddScoped<BacklogViewModel>();
             return builder;
         }
 
         public static MauiAppBuilder RegisterViews(this MauiAppBuilder builder)
         {
-            builder.Services.AddTransient<DashboardPage>();
-            builder.Services.AddTransient<BacklogPage>();
+            builder.Services.AddScoped<DashboardPage>();
+            builder.Services.AddScoped<BacklogPage>();
             return builder;
         }
     }
