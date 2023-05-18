@@ -16,8 +16,8 @@ public partial class ItemsView : ContentView
     public void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         // string previous = (e.PreviousSelection.FirstOrDefault() as PtItem);
-        var selItem = (e.CurrentSelection.FirstOrDefault() as PtItem);
-        if (selItem != null)
+
+        if (e.CurrentSelection.FirstOrDefault() is PtItem selItem)
         {
             NavigateToDetails(selItem);
         }
@@ -27,10 +27,9 @@ public partial class ItemsView : ContentView
 
     private void OnDataGridSelectionChanged(object sender, DataGridSelectionChangedEventArgs e)
     {
-        var selItem = e.AddedItems.FirstOrDefault();
-        if (selItem != null)
+        if (e.AddedItems.FirstOrDefault() is PtItem selItem)
         {
-            NavigateToDetails(selItem as PtItem);
+            NavigateToDetails(selItem);
         }
     }
 
