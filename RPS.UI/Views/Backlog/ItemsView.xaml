@@ -30,7 +30,7 @@
          -->
 
         <telerik:RadDataGrid 
-            x:Key="ItemsDataGrid"
+            RowHeight="50"
             ItemsSource="{Binding MyItems}"
             AutoGenerateColumns="False"
             SelectionMode="Single"
@@ -38,9 +38,10 @@
             SelectionChanged="OnDataGridSelectionChanged">
 
             <telerik:RadDataGrid.Columns>
+                
                 <telerik:DataGridTemplateColumn>
                     <telerik:DataGridTemplateColumn.CellContentTemplate>
-                        <DataTemplate x:Key="TypeCellTemplate">
+                        <DataTemplate>
                             <Image Source="{Binding Type, Converter={StaticResource ItemTypeImageConv}}"
                                WidthRequest="20"
                                HeightRequest="20"/>
@@ -48,33 +49,37 @@
                     </telerik:DataGridTemplateColumn.CellContentTemplate>
                 </telerik:DataGridTemplateColumn>
 
-                <telerik:DataGridTemplateColumn>
-                    <telerik:DataGridTemplateColumn.CellContentTemplate>
-                        <DataTemplate x:Key="BadgeColumnCellTemplate">
-                            <telerik:RadBadgeView BadgeBackgroundColor="{Binding Priority, FallbackValue=Green, Converter={StaticResource PriorityColorConv}}"
-                                  BadgeText=""
-                                  BadgeHorizontalPosition="Start">
-                                <telerik:RadBadgeView.Content>
-                                    <Label Text="{Binding Title}"/>
-                                </telerik:RadBadgeView.Content>
-                            </telerik:RadBadgeView>
-                        </DataTemplate>
-                    </telerik:DataGridTemplateColumn.CellContentTemplate>
-                </telerik:DataGridTemplateColumn>
+                <telerik:DataGridTextColumn HeaderText="Title" PropertyName="Title">
+                </telerik:DataGridTextColumn>
 
-                <telerik:DataGridTemplateColumn>
+                <telerik:DataGridTemplateColumn HeaderText="Assignee">
                     <telerik:DataGridTemplateColumn.CellContentTemplate>
-                        <DataTemplate x:Key="AssigneeCellTemplate">
-                            <HorizontalStackLayout Spacing="15"
-                                   Margin="15">
-                                <telerik:RadBorder BorderThickness="5"
-                                   CornerRadius="20">
+                        <DataTemplate>
+                            <HorizontalStackLayout Spacing="4" Margin="4">
+                                <telerik:RadBorder BorderThickness="2"
+                                   CornerRadius="15">
                                     <Image Source="{Binding Assignee, Converter={StaticResource AvatarConv}}"
-                                        WidthRequest="40" HeightRequest="40"/>
+                                        WidthRequest="30" HeightRequest="30"/>
                                 </telerik:RadBorder>
                                 <Label Text="{Binding Assignee, Converter={StaticResource FullNameConv}}"
                                     VerticalOptions="Center"/>
                             </HorizontalStackLayout>
+                        </DataTemplate>
+                    </telerik:DataGridTemplateColumn.CellContentTemplate>
+                </telerik:DataGridTemplateColumn>
+
+                <telerik:DataGridTemplateColumn HeaderText="Priority">
+                    <telerik:DataGridTemplateColumn.CellContentTemplate>
+                        <DataTemplate>
+                            <Label 
+                                Text="{Binding Priority}" 
+                                TextTransform="Uppercase" 
+                                HorizontalTextAlignment="Center" 
+                                VerticalTextAlignment="Center" 
+                                BackgroundColor="{Binding Priority, FallbackValue=Green, Converter={StaticResource PriorityColorConv}}" 
+                                TextColor="White"
+                                FontSize="9" 
+                                FontAttributes="Bold"/>
                         </DataTemplate>
                     </telerik:DataGridTemplateColumn.CellContentTemplate>
                 </telerik:DataGridTemplateColumn>
