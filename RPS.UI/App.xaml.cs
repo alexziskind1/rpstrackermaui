@@ -1,12 +1,10 @@
 ﻿using RPS.UI.Views;
-using RPS.UI.Views.Backlog;
-using RPS.UI.Views.Dashboard;
 
 namespace RPS.UI;
 
 public partial class App : Application
 {
-    public App(DashboardPage page)
+    public App()
     {
         InitializeComponent();
 
